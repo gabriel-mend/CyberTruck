@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400, 500,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  background-image: url(/assets/images.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  width: 90%;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 150px;
+}
+.links {
+  display: flex;
+  margin-right: -100px;
+}
+.link {
+  position: relative;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(53, 54, 56);
+  font-weight: 600;
+  margin-right: 20px;
+}
+.link:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  margin: 10px auto;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.link:hover:after {
+  width: 100%;
+  background: #000;
+}
+.register {
+  margin-left: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.register > a > img {
+  width: 20px;
+}
+.link.sing-in {
+  margin-right: 100px;
+}
+#triangle {
+  width: 15px;
+  height: 15px;
+  margin-top: -10px;
+  margin-left: 50px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid rgba(53, 54, 56, 0.466);
+  transform: rotate(-45deg);
+}
+section {
+  width: 90%;
+  margin: 0 auto;
+}
+section.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+.main-title > h1 {
+  font-size: 60px;
+  width: 250px;
+  margin-bottom: 50px;
+}
+.main-title > a {
+  padding: 10px 40px;
+  text-decoration: none;
+  background-color: rgba(109, 109, 109, 0.301);
+  border: 2px solid rgba(255, 255, 255, 0.699);
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.line-blur {
+  height: 100%;
+  width: 8px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: rgba(109, 109, 109, 0.301);
+}
+.line-progress {
+  height: 30%;
+  width: 8px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #000;
+}
+.line > p {
+  font-size: 18px;
+  font-weight: 600;
+}
+section.main.content {
+  position: relative;
+  height: 100%;
+}
+.container {
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+.content-bar {
+  display: flex;
+}
+.social {
+  display: flex;
+}
+.video {
+  width: 150px;
+}
+.box > h2 {
+  font-size: 14px;
+}
+.box.text > p {
+  font-size: 10px;
+  width: 200px;
+}
+.box.text > a > img {
+  width: 50px;
+}
+.social > a {
+  width: 40px;
+}
